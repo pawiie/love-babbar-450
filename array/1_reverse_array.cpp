@@ -1,12 +1,12 @@
 #include<iostream>
 using namespace std;
 
-void reverse_array(int *a , int n){
+void reverseArray(int *a , int n){
     for(int i=0;i<n/2;i++)
         swap(a[i],a[n-i-1]);
 }
 
-void print_array(int *a, int n){
+void printArray(int *a, int n){
     for(int i=0;i<n;i++){
         cout<<a[i]<<" ";
     }
@@ -23,13 +23,14 @@ int main(){
     }
     // print before reversing
     cout<<"before reversing\n";
-    print_array(a,n);
+    printArray(a,n);
 
     // reverse the array
-    reverse_array(a,n);
+    reverseArray(a,n);
 
     // print after reversing
     cout<<"after reversing\n";
     print_array(a,n);
     return 0;
 }
+/* time compelexity of "reverseArray" function O(n/2)=> O(n)  */
