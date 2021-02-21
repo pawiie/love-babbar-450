@@ -30,7 +30,7 @@ int main(){
 
     // print after reversing
     cout<<"after reversing\n";
-    print_array(a,n);
+    printArray(a,n);
     return 0;
 }
 /* time compelexity of "reverseArray" function O(n/2)=> O(n)  */

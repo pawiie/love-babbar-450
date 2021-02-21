@@ -12,7 +12,7 @@ pair<int,int> minMax(int *a, int l, int n){
     int mid=(l+n)/2;
     p=minMax(a,l,mid);
     q=minMax(a,mid+1,n);
-    
+
     r.first=min(p.first,q.first);
     r.second=max(p.second,q.second);
     return r;
@@ -34,3 +34,4 @@ int main(){
      
     return 0;
 }
+// time complexity "minMax" function is O(logn)
