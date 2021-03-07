@@ -2,6 +2,14 @@
 using namespace std;
 
 void move(int *a, int n){
+    int i=0,j=n-1; // using two pointers
+    while( i<j ){
+        if(a[i]>=0){
+            swap(a[i],a[j]);
+            j--;
+        }
+        if(a[i]<0) i++;
+    }
 
 }
 
